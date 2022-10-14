@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Code&Decode</title>
+</head>
+
+<body>
+<div class="principal"  >
+    
+    <form class="conteudo">
+       <h1>Code&Decode</h1>      
+
+        <label for="escrvMensage"></label>
+        <input type="text" id="escrvMensage" placeholder="Escreva sua mensagem"><br>
+
+            <select id="opcoesCod">
+                <option value="EsolhaUmaOpcao"> Escolha uma opção </option>
+                <option value="cifraDeCesar"> Cifra de César </option>
+                <option value="base64"> Base 64 </option>
+            </select>
+       
+        <input type="number" id="incremento" placeholder="Número" min="1" max="25">
+
+        <br><br>
+
+        <div class="opacao">  
+           <input type="radio" id="codificar"  name="cod_or_descod" value="rdCodificar" checked>
+           <label for="codificar" id="lbcodificar"> Codificar </label>
+
+           <input type="radio" id="decodificar"  name="cod_or_descod" value="rdDecodificar" checked>
+           <label for="decodificar" id="lbdecodificar"> Decodificar </label>
+        </div>
+
+        <br>
+
+        <input type="submit" id="submit" value="Codifica!">
+        <input type="submit" id="submit" value="Decodifica!">
+
+        <div>
+            <p class="mensagem"></p>
+        </div>
+        
+    </form>
+</div>
+
+<script src="./index.js"></script>
+
+</body>
+</html>
